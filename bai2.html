@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function demTuVaKyTu(cau) {
+        let soTu = cau.trim().split(/\s+/).length;
+        let soKyTu = cau.length;
+        return [soTu, soKyTu];
+    }
+
+    do {
+        let cau = +prompt("Nhập một câu bất kỳ:");
+        let ketQua = demTuVaKyTu(cau);
+        alert(`Số từ: ${ketQua[0]} và số ký tự: ${ketQua[1]}`);
+    } while (confirm("Bạn có muốn nhập thêm câu khác không?"));
+
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai3</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    let n = +prompt("Nhap n")
+    let f1 = 0;
+    let f2 = 1;
+    console.log(f1);
+    console.log(f2);
+    let count = 2;
+    for (let i = 0; count <= n; i++) {
+        let fibNumber = f1 + f2; 
+        console.log(fibNumber);
+        f1 = f2; 
+        f2 = fibNumber;
+        count++;
+    } 
+</script>
+
+</html>
